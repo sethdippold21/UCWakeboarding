@@ -1,0 +1,375 @@
+
+header, main, nav, footer, figure, figcaption, aside, section, article { display: block;}
+
+/* background behind wrapper*/
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+    background-color: black;
+    background-image: url(blackback.jpg);
+}
+
+/* wrapper for all content*/
+#wrapper {
+	min-height:100%;
+	position:relative;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+/* wakeboard club title*/
+#header {
+    background-color:darkred;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+/* content of the page*/
+#content {
+	padding-bottom:75px;   /* Height of the footer element */
+}
+
+/* footer for all pages*/
+/* will remain on the bottom of the page*/
+#footer {
+	width:100%;
+	height:75px;
+	position: absolute;
+	bottom:0;
+	left:0;
+    background-color:darkred;
+    color:white;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+}
+
+/* the active page link*/
+#active{
+    font-size: 25px;
+    padding-right: 4px;
+    padding-left: 4px;
+    color: darkred;
+}
+
+/* banner picture*/
+#banner{
+    display: block;
+    clear: both;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+}
+
+/* page links*/
+#links{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5%;
+    float: right;
+}
+
+/* pictures on the about page*/
+#about_pics1{
+    width: 400px;
+    margin-bottom: 50px;
+    margin-right: 25px
+}
+
+#about_pics2{
+    width: 350px;
+    margin-bottom: 50px;
+    margin-left: 25px
+
+}
+
+#about_pics3{
+    width: 805px;
+    margin-bottom: 50px;
+}
+
+/* Main Title*/
+h1{
+    text-align: center;
+    height: 70px;
+    padding-top: 10px;
+    margin: 0; 
+    font-weight: bold;
+    color:white;
+    font-size: 50px;
+}
+
+/* current page title*/
+h2{
+    padding-left: 10%;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* used to layout news and executives page*/
+section{
+    margin-left: 15%;
+    margin-right: 5%;
+    overflow: auto;
+    font-size: 90%;  
+}
+
+/* news titles*/
+h3 {
+    font-size: 25px;
+    height: 10px;
+    text-decoration:underline;
+}
+
+/* general paragraphs*/
+section p{
+    font-size: 20px;
+    display: table-cell; 
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* used in the faq page*/
+table{
+    margin: auto;
+    width: 80%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+/*table rows. faq*/
+tr:nth-of-type(odd){
+    background-color: #e9e9e9;
+}
+
+/*table header. questions for faq*/
+th{
+    font-size: 20px;
+    width: 300px;
+    height: 150px;
+}
+
+/*table data. answers for faq*/
+td{
+    font-size: 20px;
+}
+
+/* signup form*/
+form{
+    width: 500px;
+    margin-bottom:50px;
+    margin-left:20px;
+    background-color:#e9e9e9;
+    padding: 20px;
+}
+
+/* signup form labels*/
+label{
+    float: left;
+    display: block;
+    text-align: right;
+    width: 200px;
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+/* signup inputs*/
+input{
+    display: block;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+/* signup submit button*/
+input[type="submit"]{
+    margin-left: 210px;
+    font-size:15px;
+    margin-left: 65%;
+    font-size:20px;
+    height: 20%;
+    width: 30%;
+}
+
+a:link{
+    color: gray;
+    text-decoration: none;
+}
+
+a:visited{
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    text-decoration: none;
+}
+ 
+.inactive{
+    text-decoration: none;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+/* picture thumbnails*/
+.thumbnail{
+    width: auto; 
+    height: 200px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+/* descriptions of the pictures */
+.description{
+    font-size: 20px;
+    display: table-cell; 
+    height: 200px; 
+    vertical-align: middle; 
+    padding-left: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 64em) {
+    html,
+    body {
+        background-image: none;
+    }
+    /* wrapper for all content*/
+    #wrapper {
+        width: auto;
+    }
+    #banner{
+        width: 90%;
+    }
+
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 37.5em){
+    #header {
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 100%;
+    }
+    #wrapper {
+        width: 95%;
+    }
+    #footer {
+        height:50px;
+        width: 100%;
+        font-size: 12px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    #banner{
+        display: block;
+        clear: both;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+    #links{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 0px;
+        float: none;
+        width: 100%;
+    }
+    #active{
+        font-size: 15px;
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+    img{
+        display: none;
+    }
+    h1{ 
+        font-size: 30px;
+        height: 50px;
+        width: 100%;
+    }
+    h2{
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-left: 20px;
+        font-size: 30px;
+    }
+    h3{
+        font-size: 15px;
+        height: 20px;
+    }
+    html,body{ 
+        margin:0;
+        padding:0;
+        height:100%;
+        background-color: #FFFFFF;
+        background-image: none; 
+    }
+    section{
+        margin-left: 5%;
+    }
+    section p{
+        font-size: 15px;
+        display: table-cell; 
+        height: 20px; 
+        vertical-align: middle; 
+    }
+    th{
+        font-size: 15px;
+        width: auto;
+        height: auto;
+    }
+    td{
+        font-size: 15px;
+    }
+    .description{
+        font-size: 15px;
+        padding-left: 20px;
+        height: auto; 
+        padding-bottom: 15px;
+    }
+    .inactive{
+        font-size: 15px;
+        text-decoration: none;
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+    form{
+        width: 80%;
+        height: 90%;
+    }
+    label{
+        text-align: left;
+        width: 75%;
+        padding-right: 0px;
+        font-size: 20px;
+    }
+    input{
+        width: 70%;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    input[type="submit"]{
+        margin-left: 70%;
+        font-size:20px;
+        height: 20%;
+        width: 30%;
+    }
+
+}
+
